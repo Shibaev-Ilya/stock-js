@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <div class="order" id="order">
+      <h2 class="title-2">Заголовок стока</h2>
+      <div class="buy__selects">
+        <div class="buy__selects-item">
+          <select name="<?= $name; ?>" class="buy__selects-block  js-filter-select" data-placeholder="<?= $filter_label[$name]; ?>">
+            <option value="">Пункт фильтра 1</option>
+            <option value="">Пункт фильтра 2</option>
+            <option value="">Пункт фильтра 3</option>
+            <option value="">Пункт фильтра 4</option>
+          </select>
+        </div>
+        <div class="buy__selects-item">
+          <select name="<?= $name; ?>" class="buy__selects-block  js-filter-select" data-placeholder="<?= $filter_label[$name]; ?>">
+            <option value="">Пункт фильтра 1</option>
+            <option value="">Пункт фильтра 2</option>
+            <option value="">Пункт фильтра 3</option>
+            <option value="">Пункт фильтра 4</option>
+          </select>
+        </div>
+        <div class="buy__selects-item">
+          <select name="<?= $name; ?>" class="buy__selects-block  js-filter-select" data-placeholder="<?= $filter_label[$name]; ?>">
+            <option value="">Пункт фильтра 1</option>
+            <option value="">Пункт фильтра 2</option>
+            <option value="">Пункт фильтра 3</option>
+            <option value="">Пункт фильтра 4</option>
+          </select>
+        </div>
+      </div>
+      <div class="order__wrap">
+<!--        место для вывода стока-->
+
+        <div class="order__item">
+          <div class="order__image">
+            <div class="order__image-wrap">
+              <img src="https://www.avtovzglyad.ru/media/article/BMW_3-Series_2019.jpg.740x555_q85_box-38%2C115%2C1102%2C913_crop_detail_upscale.jpg" alt="Картинка">
+            </div>
+          </div>
+          <div class="order__info">
+            <div class="order__title">Модель</div>
+            <div class="order__list js-order-list">
+              <div class="order__list-block">
+                <div class="order__option"><span>Комплектация:</span> текст</div>
+                <div class="order__option"><span>Год выпуска:</span> текст</div>
+              </div>
+              <div class="order__list-block">
+                <div class="order__option"><span>Привод:</span> текст</div>
+                <div class="order__option"><span>Топливо:</span> текст</div>
+              </div>
+              <div class="order__list-block">
+                <div class="order__option"><span>Двигатель:</span> текст</div>
+                <div class="order__option"><span>КПП:</span> текст</div>
+              </div>
+              <div class="order__list-block">
+                <div class="order__option"><span>Тип авто:</span> текст</div>
+                <div class="order__option"><span>Цвет:</span>текст</div>
+              </div>
+            </div>
+          </div>
+          <div class="order__controls">
+            <div class="order__phone">
+              <div class="order__phone-icon">
+                <img src="./img/icon_phone.svg" alt="">
+              </div>
+              <div class="order__phone-value">
+                <a href="tel:+7777777777">+7777777777</a>
+              </div>
+            </div>
+            <div class="order__button"> <a data-fancybox data-src="#prop" class="button"><span>Получить предложение</span></a>
+            </div>
+            <div class="order__link"><a data-fancybox data-src="#test-drive">Записаться на тест-драйв</a>
+            </div>
+          </div>
+        </div>
+        <div class="order__item">
+          <div class="order__image">
+            <div class="order__image-wrap">
+              <img src="https://www.avtovzglyad.ru/media/article/BMW_3-Series_2019.jpg.740x555_q85_box-38%2C115%2C1102%2C913_crop_detail_upscale.jpg" alt="Картинка">
+            </div>
+          </div>
+          <div class="order__info">
+            <div class="order__title">Модель</div>
+            <div class="order__list js-order-list">
+              <div class="order__list-block">
+                <div class="order__option"><span>Комплектация:</span> текст</div>
+                <div class="order__option"><span>Год выпуска:</span> текст</div>
+              </div>
+              <div class="order__list-block">
+                <div class="order__option"><span>Привод:</span> текст</div>
+                <div class="order__option"><span>Топливо:</span> текст</div>
+              </div>
+              <div class="order__list-block">
+                <div class="order__option"><span>Двигатель:</span> текст</div>
+                <div class="order__option"><span>КПП:</span> текст</div>
+              </div>
+              <div class="order__list-block">
+                <div class="order__option"><span>Тип авто:</span> текст</div>
+                <div class="order__option"><span>Цвет:</span>текст</div>
+              </div>
+            </div>
+          </div>
+          <div class="order__controls">
+            <div class="order__phone">
+              <div class="order__phone-icon">
+                <img src="./img/icon_phone.svg" alt="">
+              </div>
+              <div class="order__phone-value">
+                <a href="tel:+7777777777">+7777777777</a>
+              </div>
+            </div>
+            <div class="order__button"> <a data-fancybox data-src="#prop" class="button"><span>Получить предложение</span></a>
+            </div>
+            <div class="order__link"><a data-fancybox data-src="#test-drive">Записаться на тест-драйв</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order__show">
+        <a class="button button_empty"><span>Показать еще</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
