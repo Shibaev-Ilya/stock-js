@@ -137,7 +137,8 @@
 }
 
 .order__info {
-  flex: 0 1 420px;
+  flex: 1 0 auto;
+  margin-right: 40px;
 }
 
 @media (max-width: 1024px) {
@@ -182,7 +183,7 @@
 }
 
 .order__option {
-  width: 50%;
+  width: 33%;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
