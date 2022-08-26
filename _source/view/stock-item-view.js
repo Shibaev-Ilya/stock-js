@@ -1,13 +1,32 @@
 import {createElement} from '../render.js';
 
+const createButtonBlock = () => {
+  return (`
+<div class="order__controls">
+  <div class="order__phone">
+    <div class="order__phone-icon">
+      <img src="./img/icon_phone.svg" alt="">
+    </div>
+    <div class="order__phone-value">
+      <a href="tel:+7777777777">+7777777777</a>
+    </div>
+  </div>
+  <div class="order__button"> <a data-fancybox data-src="#prop" class="button"><span>Получить предложение</span></a>
+  </div>
+  <div class="order__link"><a data-fancybox data-src="#test-drive">Записаться на тест-драйв</a>
+  </div>
+</div>
+`)
+};
+
 const createStockItemTemplate = (car) => {
-  const {price, year, discountPrice, maxDiscount, model, fuel, drive, vin} = car;
+  const {price, year, discountPrice, maxDiscount, model, fuel, drive, vin, images} = car;
 
   return (`
  <div class="order__item">
   <div class="order__image">
     <div class="order__image-wrap">
-      <img src="https://www.avtovzglyad.ru/media/article/BMW_3-Series_2019.jpg.740x555_q85_box-38%2C115%2C1102%2C913_crop_detail_upscale.jpg" alt="Картинка">
+      <a href="https://placeholder.com"><img src="${images.image[0]}"></a>
     </div>
   </div>
   <div class="order__info">
@@ -31,20 +50,7 @@ const createStockItemTemplate = (car) => {
       </div>
     </div>
   </div>
-  <div class="order__controls">
-    <div class="order__phone">
-      <div class="order__phone-icon">
-        <img src="./img/icon_phone.svg" alt="">
-      </div>
-      <div class="order__phone-value">
-        <a href="tel:+7777777777">+7777777777</a>
-      </div>
-    </div>
-    <div class="order__button"> <a data-fancybox data-src="#prop" class="button"><span>Получить предложение</span></a>
-    </div>
-    <div class="order__link"><a data-fancybox data-src="#test-drive">Записаться на тест-драйв</a>
-    </div>
-  </div>
+  ${createButtonBlock()}
 </div>
 `);
 };

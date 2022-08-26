@@ -122,10 +122,10 @@ const generateStockItem = () => {
       },
       images: {
         image: [
-          "https://www.avtovzglyad.ru/media/article/BMW_3-Series_2019.jpg.740x555_q85_box-38%2C115%2C1102%2C913_crop_detail_upscale.jpg",
-          "https://www.avtovzglyad.ru/media/article/BMW_3-Series_2019.jpg.740x555_q85_box-38%2C115%2C1102%2C913_crop_detail_upscale.jpg",
-          "https://www.avtovzglyad.ru/media/article/BMW_3-Series_2019.jpg.740x555_q85_box-38%2C115%2C1102%2C913_crop_detail_upscale.jpg",
-          "https://www.avtovzglyad.ru/media/article/BMW_3-Series_2019.jpg.740x555_q85_box-38%2C115%2C1102%2C913_crop_detail_upscale.jpg"
+          `https://via.placeholder.com/600x600/258DC8/E0F6FD?text=Car+image+${getRandomInteger(1999, 9999)}`,
+          `https://via.placeholder.com/600x600/258DC8/E0F6FD?text=Car+image+${getRandomInteger(1999, 9999)}`,
+          `https://via.placeholder.com/600x600/258DC8/E0F6FD?text=Car+image+${getRandomInteger(1999, 9999)}`,
+          `https://via.placeholder.com/600x600/258DC8/E0F6FD?text=Car+image+${getRandomInteger(1999, 9999)}`
         ]
       },
       live_photos: 1,
